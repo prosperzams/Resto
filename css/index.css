@@ -1,0 +1,116 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;/*prend en compte les calcules reel des largeur*/
+}
+body{
+    background-color: rgb(241, 241, 241);
+}
+.cc-navbar{
+    font-family: serif;
+    z-index: 99;
+}
+.cc-navbar .nav-link{
+    transition: .4s ease-in-out;
+    border-color: .3s ease;
+}
+.cc-navbar .nav-link:hover{
+    background-color: rgb(107, 107, 107);
+    color: white;
+    border-radius: 10%;
+}
+.nav-link.active {
+    background-color: rgb(107, 107, 107);
+    color: white;
+    border-radius: 10%;
+}
+.fully{
+    text-align: center;
+    margin-bottom: 150px;
+}
+.descrip{
+    font-size: 25px;
+}
+h1{
+    font-size: 55px;
+}
+.carousel-inner img{
+    filter: brightness(50%);
+}
+h2{
+    padding-top: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 35px;
+}
+.card-title{
+    text-align: center;
+    padding-top: 10px;
+}
+.card{
+    text-align: center;
+    padding-bottom: 20px;
+}
+.card-text{
+    font-weight: 0%;
+    font-size: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#fowhat{
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.test{
+    margin-bottom: 10px;
+    margin-block: 20px;
+    font-size: 13px;
+}
+.img-fluid{
+    border-radius: 50%;
+    height: 25rem;
+    width: 25rem;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.command{
+    font-weight: bold;
+    font-size: 35px;
+    text-align: center;
+    margin-top: 10px;
+}
+.after{
+    background-color: rgb(231, 229, 229);
+   /* margin-left: 100px;
+    margin-right: 100px;*/
+}
+/*form{
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+}/*/
+.fin{
+    color: aliceblue;
+    text-align: left;
+}
+.final{
+    text-align: right;
+}
+.alert-success{
+    display: none;
+}
+i .fa-solid .fa-shopping-cart {
+    height: 500px;
+}
+@media only screen and(max-width: 900px) {
+    form{
+        margin: 0%;
+        padding: auto;
+    }
+}
+.vtre{
+    padding-top: 10;
+}

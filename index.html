@@ -1,0 +1,392 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="image/logo.png">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>CamerResto</title>
+</head>
+<body>
+    <nav class="cc-navbar navbar navbar-expand-lg position-fixed bg-light w-100">
+        <div class="container-fluid">
+          <a class="navbar-brand ms-3" href="#" style="font-weight: bold;"><span><i class="fa-solid fa-utensils"></i></span> CamerResto</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item px-3">
+                <a class="nav-link active" aria-current="page" href="#">Acceuil</a>
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link " aria-current="page" href="#plats">Plats</a>
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link " aria-current="page" href="#fowhat">Pourquoi</a>
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link " aria-current="page" href="#menu">Menus</a>
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link " aria-current="page" href="#commandes">Commandes</a>
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link " aria-current="page" href="#apropos">About</a>
+              </li>
+              <li class="nav-item px-3">
+                <i class="fa-solid fa-shopping-cart px-2"></i>
+                <span class="translate-middle badge rounded-pill bg-danger" id="counter">0</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="image/poulet.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <p class="descrip">Nos plats speciales</p>
+                <h1>POULET FRIT</h1>
+                <p>Some representative placeholder content for the first slide.</p>
+              <button type="button" class="btn btn-success fully">Commande Maintenant</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="image/pizza.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <p class="descrip">Nos plats speciales</p>
+                <h1>PIZZA CHAUDE</h1>
+                <p>Some representative placeholder content for the second slide.</p>
+              <button type="button" class="btn btn-success fully">Commande Maintenant</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="image/nouille.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <p class="descrip">Nos plats speciales</p>
+                <h1>NOUILLES EPICEES</h1>
+                <p>Some representative placeholder content for the second slide.</p>
+              <button type="button" class="btn btn-success fully">Commande Maintenant</button>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    
+    <div class="container">
+        <div class="row begining">
+            <h2 id="plats">PLATS POPULAIRES</h2>
+            <div class="col-lg-4 col-md-6">
+                <div class="card text-bg-light mb-5 shadow-lg rounded" style="max-width: 18rem;">
+                    <img src="image/pouletpane.jpg" class="" width="100%" height="150px">
+                    <div class="vtre">
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                        <h5 class="card-title">Poulet pané</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <span class="text-danger">12000 FCFA</span>  
+                        <button type="button" class="btn btn-primary" id="add">Add to card</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card text-bg-light mb-5 shadow-lg rounded" style="max-width: 18rem;">
+                    <img src="image/chocolat.jpg" class="" width="100%" height="150px">
+                    <div class="vtre">
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                        <h5 class="card-title">Framboise au Chocolat</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <span class="text-danger">5000 FCFA</span>  <button type="button" class="btn btn-primary" id="add">Add to card</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card text-bg-light mb-5 shadow-lg rounded" style="max-width: 18rem;">
+                    <img src="image/biscuit.jpg" class="" width="100%" height="150px">
+                    <div class="vtre">
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                        <h5 class="card-title">Savour de Biscuit</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <span class="text-danger">500 FCFA</span>  <button type="button" class="btn btn-primary" id="add">Add to card</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="card text-bg-light shadow-lg rounded" style="max-width: 18rem;">
+                    <img src="image/HamBurger.jpg" class="" width="100%" height="150px">
+                    <div class="vtre">
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                        <h5 class="card-title">HamBurger</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <span class="text-danger">3500 FCFA</span>  <button type="button" class="btn btn-primary" id="add">Add to card</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card text-bg-light shadow-lg rounded" style="max-width: 18rem;">
+                    <img src="image/Pouletdg.jpg" class="" width="100%" height="150px">
+                    <div class="vtre">
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                        <h5 class="card-title">Poulet DG</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <span class="text-danger">10000 FCFA</span>  <button type="button" class="btn btn-primary" id="add">Add to card</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card text-bg-light shadow-lg rounded" style="max-width: 18rem;">
+                    <img src="image/fritepomme.jpg" class="" width="100%" height="150px">
+                    <div class="vtre">
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                        <h5 class="card-title">Frites de Pommes</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <span class="text-danger">2000 FCFA</span>  <button type="button" class="btn btn-primary" id="add">Add to card</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+        <div class="container-flui">
+            <h5 id="fowhat">Pourquoi Nous Choisir?</h5>
+            <section class="bg-light">
+                <div class="row d-flex justify-content-center align-items-center">
+                    <div class="col col-xl-5">
+                        <div class="">
+                            <div class="row g-0">
+                                <div class="col-lg-6 d-none d-md-block">
+                                <img src="image/tofabout.jpg" class="img-fluid">
+                                </div>
+                                <div class="col-lg-6">
+                                    <h5 id="fowhat">Meilleur Repas du Pays</h5>
+                                    <p class="test">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime tempore molestias iure doloremque, aspernatur laboriosam ab consequatur voluptatem unde ut veritatis saepe enim, sunt soluta totam. Facere, ut. Dolorem, nostrum veritatis adipisci corporis eaque similique mollitia perspiciatis reiciendis sapiente! Ducimus voluptas commodi consectetur voluptatem enim id deleniti sapiente ullam iusto harum, nisi ea dolorum quis numquam repellendus dicta eius rem, a nesciunt ipsam temporibus corrupti at sequi. Similique hic recusandae quas voluptates! Accusantium architecto ipsam facere consequatur sequi quaerat corporis?
+                                    </p>
+                                    <a href="" class="px-1">
+                                        <button type="button" class="btn" style="background-color: rgb(134, 134, 134);">Livraison Gratuite</button>  
+                                    </a>
+                                    <a href="" class="px-1">
+                                        <button type="button" class="btn" style="background-color: rgb(134, 134, 134);">Payement Facile</button>      
+                                    </a>
+                                    <a href="" class="px-1">
+                                        <button type="button" class="btn" style="background-color: rgb(134, 134, 134);">Services 24H/7J</button>
+                                    </a>
+                                    <a href="">
+                                        <button type="button" class="btn btn-warning col-12">Learn+</button> 
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>        
+            </section>
+        </div>
+
+    <div class="container">
+        
+        <div class="row begining">
+            <h2 id="menu">MENU DU JOUR SPECIAL</h2>
+            <div class="col-lg-4 col-md-6">
+                <div class="card text-bg-light shadow-lg mb-5 rounded" style="max-width: 18rem;">
+                    <img src="image/pommepile.jpg" class="" width="100%" height="200px">
+                    <div class="vtre">
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                        <h5 class="card-title">Pilé de Pommes</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <span class="text-danger">2000 FCFA</span>  <button type="button" class="btn btn-primary" id="add">Add to card</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card text-bg-light shadow-lg mb-5 rounded" style="max-width: 18rem;">
+                    <img src="image/malaxé.jpg" class="" width="100%" height="200px">
+                    <div class="vtre">                    
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                        <h5 class="card-title">Bananes Malaxé</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <span class="text-danger">5000 FCFA</span>  <button type="button" class="btn btn-primary" id="add">Add to card</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card text-bg-light shadow-lg mb-5 rounded" style="max-width: 18rem;">
+                    <img src="image/saucejaune.jpg" class="" width="100%" height="200px">
+                    <div class="vtre">
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                        <h5 class="card-title">Taro Sauce Jaune</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <span class="text-danger">5000 FCFA</span>  <button type="button" class="btn btn-primary" id="add">Add to card</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="card text-bg-light shadow-lg rounded" style="max-width: 18rem;">
+                    <img src="image/kwui.jpg" class="" width="100%" height="200px">
+                    <div class="vtre">
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                        <h5 class="card-title">Le Kwui</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <span class="text-danger">3500 FCFA</span>  <button type="button" class="btn btn-primary" id="add">Add to card</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card text-bg-light shadow-lg rounded" style="max-width: 18rem;">
+                    <img src="image/couscousLegumes.jfif" class="" width="100%" height="200px">
+                    <div class="vtre">
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                        <h5 class="card-title">Couscous Legumes DG</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <span class="text-danger">10000 FCFA</span>  <button type="button" class="btn btn-primary" id="add">Add to card</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card text-bg-light shadow-lg rounded" style="max-width: 18rem;">
+                    <img src="image/okok.jpg" class="" width="100%" height="200px">
+                    <div class="vtre">
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                        <h5 class="card-title">Le Kock</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <span class="text-danger">2000 FCFA</span>  <button type="button" class="btn btn-primary" id="add">Add to card</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h5 class="command" id="commandes">Commandes Maintenant Rapide et Gratuit</h5>
+        <div class="row after"0µ>
+            <form class="shadow-lg rounded">
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                    Commandes enregistrer avec succes Mr/Mlle/Mme
+                    <button type="button" data-bs-dismiss="alert"></button>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 mt-3 mb-3">
+                        <input type="text" class="form-control" placeholder="Entrer un Nom" id="nom">
+                    </div>
+                    <div class="col-lg-6 col-md-6 mt-3 mb-3">
+                        <input type="number" class="form-control" placeholder="Entrer votre contact" id="tel">
+                    </div>
+                    <div class="col-lg-6 col-md-6 mt-3 mb-3">
+                        <input type="text" class="form-control" placeholder="Entrer le nom de la nourriture" id="eat">
+                    </div>
+                    <div class="col-lg-6 col-md-6 mt-3 mb-3">
+                        <input type="text" class="form-control" placeholder="Autre nourriture" id="otherEat">
+                    </div>
+                    <div class="col-lg-6 col-md-6 mt-3 mb-3">
+                        <input type="number" class="form-control" placeholder="Entrer le nombre de commande" id="number">
+                    </div>
+                    <div class="col-lg-6 col-md-6 mt-3 mb-3">
+                        <input type="date" class="form-control" id="date">
+                    </div>
+                    <div class="col-lg-6 col-md-6 mt-3 mb-3">
+                        <textarea class="form-control" placeholder="Entrez votre address" id="address" rows="5" style="resize: none;"></textarea>
+                    </div>
+                    <div class="col-lg-6 col-md-6 mt-3 mb-3">
+                        <textarea class="form-control" placeholder="Description sur la commande" id="description" rows="5" style="resize: none;"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-success">Envoyer</button>
+                </div>
+            </form>
+        </div>
+        <div class="row" id="apropos">
+            <h5 class="command">A Propos de Nous</h5>
+        </div>
+    </div>
+
+
+
+
+        
+    <div class="container-fluid">
+        <div class="row">
+            <blockquote class="blockquote mb-0 bg-dark">
+                <footer class="blockquote-footer">
+                    <p class="fin">copyright 2023 by HTTC
+                    </p>
+                    <p class="final">
+                        <a href=""><i class="fa-brands fa-facebook text-light"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter text-light"></i></a>
+                    </p>
+                </footer>
+            </blockquote>
+        </div>    
+    </div>
+
+
+
+    
+    
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
